@@ -10,7 +10,7 @@ body {
 }
 
 html {
-    background: #f2f2f2;
+    background: #F8E7DE; /* Background color */
     font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -18,4 +18,52 @@ html {
 
 #root {
     height: 100%;
+}
+
+/* Rounded corners for buttons, links, and hover-effect elements */
+a, button, .hover-effect {
+    border-radius: 12px; /* Adds rounded corners */
+}
+
+/* Hover effect: background changes to beige when hovered */
+a:hover, button:hover, .hover-effect:hover {
+    background-color: #F8E7DE; /* Beige background on hover */
+    transition: background-color 0.3s ease;
+    border-radius: 12px; /* Keeps the rounded corners on hover */
+}
+
+/* Additional styling for rounded containers */
+.rounded-container {
+    background-color: #FFFEFC; /* White background */
+    border-radius: 16px; /* Adds more rounded corners */
+    padding: 16px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14), 0px 0px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* Example of rounded buttons */
+button {
+    background-color: #1C534A; /* Accent color */
+    color: #FFFEFC; /* White text */
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 16px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #16443A; /* Darker teal on hover */
+    transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+/* Input fields with rounded borders */
+input {
+    border: 1px solid #D1D1D1;
+    padding: 8px;
+    border-radius: 12px; /* Rounded corners for inputs */
+    outline: none;
+}
+
+input:focus {
+    border-color: #1C534A; /* Accent color when focused */
 }

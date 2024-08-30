@@ -1,46 +1,48 @@
 .container {
     max-height: calc(100vh - 100px);
     width: 300px;
-    
+    border-radius: 16px; /* More rounded corners */
+    overflow: hidden; /* Ensure the content is clipped */
 }
 
 .listContainer {
     overflow: hidden auto;
     max-height: calc(90vh - 105px);
+    border-radius: 16px; /* More rounded corners */
 }
 
 .itemCell {
     max-width: 270px;
     min-height: 32px;
     cursor: pointer;
-    padding-left: 15px;
-    padding-right: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 10px 15px; /* Adjusted padding */
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 12px; /* More rounded corners */
     display: flex;
+    background: #FFFEFC; /* White background */
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 .itemCell:hover {
-    background: #E6E6E6;
+    background: #F8E7DE; /* Beige background on hover */
 }
 
 .itemButton {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 28px;
-    height: 28px;
-    border: 1px solid #d1d1d1;
-    border-radius: 5px;
-    background-color: white;
+    width: 32px; /* Slightly larger */
+    height: 32px; /* Slightly larger */
+    border: 1px solid #D1D1D1;
+    border-radius: 12px; /* More rounded corners */
+    background-color: #FFFEFC; /* White background */
     margin: auto 2.5px;
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 .itemButton:hover {
-    background-color: #E6E6E6;
+    background-color: #F8E7DE; /* Beige background on hover */
 }
 
 .chatGroup {
@@ -64,6 +66,7 @@
     font-weight: 600;
     margin-bottom: 5px;
     padding-left: 15px;
+    color: #1C534A; /* Accent color */
 }
 
 .chatTitle {
@@ -71,4 +74,5 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    color: #3A3A3A; /* Dark Gray text */
 }

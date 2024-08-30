@@ -5,13 +5,15 @@
 }
 
 .header {
-    background-color: #f2f2f2;
+    background-color: #FFFEFC; /* Background color matching Voicezon's theme */
+    border-bottom: 1px solid #D1D1D1; /* Light border for separation */
 }
 
 .headerContainer {
     display: flex;
     justify-content: left;
     align-items: center;
+    padding: 12px 20px;
 }
 
 .headerTitleContainer {
@@ -28,7 +30,7 @@
     line-height: 28px;
     display: flex;
     align-items: flex-end;
-    color: #242424;
+    color: #1C534A; /* Accent color */
 }
 
 .headerIcon {
@@ -46,14 +48,19 @@
     gap: 4px;
     width: 86px;
     height: 32px;
-    background: radial-gradient(109.81% 107.82% at 100.1% 90.19%, #0F6CBD 33.63%, #2D87C3 70.31%, #8DDDD8 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-    border-radius: 4px;
+    background: radial-gradient(109.81% 107.82% at 100.1% 90.19%, #0F6CBD 33.63%, #2D87C3 70.31%, #8DDDD8 100%); /* Updated gradient */
+    border-radius: 8px; /* More rounded corners */
     flex: none;
     order: 1;
     flex-grow: 0;
     position: absolute;
     right: 20px;
     cursor: pointer;
+    transition: background 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.shareButtonContainer:hover {
+    background: radial-gradient(109.81% 107.82% at 100.1% 90.19%, #1D5BB8 33.63%, #235F9D 70.31%, #6CC2B0 100%); /* Darker gradient on hover */
 }
 
 .shareButton {
@@ -77,7 +84,8 @@
     line-height: 20px;
     color: #707070;
     border: 1px solid #D1D1D1;
-    border-radius: 4px;
+    border-radius: 8px; /* More rounded corners */
+    padding: 8px;
 }
 
 .copyButtonContainer {
@@ -88,14 +96,15 @@
     align-items: center;
     padding: 5px 12px;
     gap: 4px;
-    background: #FFFFFF;
+    background: #FFFEFC; /* Background color matching Voicezon's theme */
     border: 1px solid #D1D1D1;
-    border-radius: 4px;
+    border-radius: 8px; /* More rounded corners */
+    transition: background 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .copyButtonContainer:hover {
     cursor: pointer;
-    background: #D1D1D1;
+    background: #F0F0F0; /* Light gray on hover */
 }
 
 .copyButton {
@@ -109,5 +118,5 @@
     line-height: 20px;
     display: flex;
     align-items: center;
-    color: #242424;
+    color: #1C534A; /* Accent color */
 }
